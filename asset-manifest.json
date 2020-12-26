@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ileri-labs/static/css/main.708549cd.chunk.css",
+    "main.js": "/ileri-labs/static/js/main.d05d943c.chunk.js",
+    "main.js.map": "/ileri-labs/static/js/main.d05d943c.chunk.js.map",
+    "runtime-main.js": "/ileri-labs/static/js/runtime-main.9911397f.js",
+    "runtime-main.js.map": "/ileri-labs/static/js/runtime-main.9911397f.js.map",
+    "static/css/2.1c22e3f4.chunk.css": "/ileri-labs/static/css/2.1c22e3f4.chunk.css",
+    "static/js/2.0cd2669b.chunk.js": "/ileri-labs/static/js/2.0cd2669b.chunk.js",
+    "static/js/2.0cd2669b.chunk.js.map": "/ileri-labs/static/js/2.0cd2669b.chunk.js.map",
+    "static/js/3.1b922998.chunk.js": "/ileri-labs/static/js/3.1b922998.chunk.js",
+    "static/js/3.1b922998.chunk.js.map": "/ileri-labs/static/js/3.1b922998.chunk.js.map",
+    "index.html": "/ileri-labs/index.html",
+    "static/css/2.1c22e3f4.chunk.css.map": "/ileri-labs/static/css/2.1c22e3f4.chunk.css.map",
+    "static/css/main.708549cd.chunk.css.map": "/ileri-labs/static/css/main.708549cd.chunk.css.map",
+    "static/js/2.0cd2669b.chunk.js.LICENSE.txt": "/ileri-labs/static/js/2.0cd2669b.chunk.js.LICENSE.txt",
+    "static/media/Background.21d06861.jpg": "/ileri-labs/static/media/Background.21d06861.jpg",
+    "static/media/Background.6abd7bc5.png": "/ileri-labs/static/media/Background.6abd7bc5.png",
+    "static/media/Group image.2b2cc2e5.png": "/ileri-labs/static/media/Group image.2b2cc2e5.png",
+    "static/media/Image.fcaa2971.png": "/ileri-labs/static/media/Image.fcaa2971.png",
+    "static/media/Lab.50c6780d.svg": "/ileri-labs/static/media/Lab.50c6780d.svg",
+    "static/media/Launch.1cd68b5f.svg": "/ileri-labs/static/media/Launch.1cd68b5f.svg",
+    "static/media/Logo.2c190eec.svg": "/ileri-labs/static/media/Logo.2c190eec.svg",
+    "static/media/Payment.9e378c0d.svg": "/ileri-labs/static/media/Payment.9e378c0d.svg",
+    "static/media/Signup.458d22da.svg": "/ileri-labs/static/media/Signup.458d22da.svg",
+    "static/media/caro4.106ccec1.jpg": "/ileri-labs/static/media/caro4.106ccec1.jpg",
+    "static/media/hate-me.f974cf42.jpg": "/ileri-labs/static/media/hate-me.f974cf42.jpg",
+    "static/media/home_launch.887aa26c.png": "/ileri-labs/static/media/home_launch.887aa26c.png",
+    "static/media/home_test.2e0d24f3.png": "/ileri-labs/static/media/home_test.2e0d24f3.png",
+    "static/media/image.7b76f9bd.jpg": "/ileri-labs/static/media/image.7b76f9bd.jpg",
+    "static/media/listImage.5953aec7.svg": "/ileri-labs/static/media/listImage.5953aec7.svg",
+    "static/media/review_image_1.6b8d6fe2.png": "/ileri-labs/static/media/review_image_1.6b8d6fe2.png",
+    "static/media/slick-theme.css": "/ileri-labs/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9911397f.js",
+    "static/css/2.1c22e3f4.chunk.css",
+    "static/js/2.0cd2669b.chunk.js",
+    "static/css/main.708549cd.chunk.css",
+    "static/js/main.d05d943c.chunk.js"
+  ]
+}
