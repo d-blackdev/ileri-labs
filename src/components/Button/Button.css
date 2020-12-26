@@ -1,0 +1,33 @@
+.btn-cont{
+  width: 200px;
+  height: 45px;
+  align-items: center;
+  border: 0px !important;
+  background-color: #FCFCFC !important;
+  border-radius: 5px;
+  outline: none !important;
+  transition: all.5s ease-in-out;
+  color: #A5593C;
+}
+.btn-cont.coloured{
+  background-color: #A5593C !important;
+  color: #FCFCFC;
+}
+.btn-cont.coloured:hover{
+  background-color: #FCFCFC !important;
+  color: #191919;
+  border: 1px solid #A5593C !important;
+}
+.btn_text{
+  padding-top: 12px;
+}
+
+.btn-cont:hover{
+  background-color:#A5593C !important;
+  color: #FCFCFC;
+}
+@media screen and (max-width:768px){
+.btn-cont{
+  
+}
+}

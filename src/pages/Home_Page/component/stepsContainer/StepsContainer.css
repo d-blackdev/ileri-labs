@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  min-height: 80%;
+  padding-top: 30px;
+  /* padding-left: 20px; */
+}
+.single_Cont {
+  padding: 15px 0px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.single_text {
+  margin: 15px 0px;
+  font-size: 22.61px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #687a61;
+}
+.single_steps {
+  font-size: 17.16px;
+  font-weight: 300;
+  color: #687a61;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 320px){
+   .single_steps {
+  font-size: 14.16px;
+  
+}
+}
+@media screen and (max-width: 768px){
+   .container{
+       padding-top: 10px;
+   }
+}
