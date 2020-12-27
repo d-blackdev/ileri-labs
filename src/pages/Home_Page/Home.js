@@ -79,7 +79,7 @@ const Home = () => {
               transition={{
                 delay: 4,
                 type: "spring",
-                mass: 0.4,
+                mass: 0.5,
                 damping:8
               }}
               className="box "
