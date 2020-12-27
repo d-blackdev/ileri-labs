@@ -30,8 +30,7 @@ const Home = () => {
   return (
     <>
       <Containers>
-        {/* <Navbar /> */}
-        {/* <Row className="content"> */}
+       
         <Col sm={12} lg={7} className="col1">
           <div className="main_text_cont">
             <h1 className="main_Text">
