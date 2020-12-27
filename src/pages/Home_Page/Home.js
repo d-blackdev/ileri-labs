@@ -5,6 +5,7 @@ import ReactPlayer from "react-player";
 import "./Home.css";
 import Containers from "../../components/Container/Container";
 import { settings, data } from "./component/CarouselSettings";
+import { motion } from "framer-motion";
 // IMAGES
 import ListImage from "../../assets/images/listImage.svg";
 import Image1 from "../../assets/images/Image.png";
@@ -30,57 +31,105 @@ const Home = () => {
   return (
     <>
       <Containers>
-       
         <Col sm={12} lg={7} className="col1">
-          <div className="main_text_cont">
-            <h1 className="main_Text">
-              <p className="manu">Manufacture</p>
-              <p className="formulate">Formulate</p>
-              <p className="brand">Brand</p>
-            </h1>
-          </div>
+          <motion.div className="main_text_cont">
+            <motion.h1
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{
+                delay: 0.5,
+                type: "spring",
+                stiffness: 100,
+                when: "beforeChildren",
+                staggerChildren: 0.5,
+              }}
+              className="main_Text"
+            >
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8, duration: 1 }}
+                className="manu"
+              >
+                Manufacture
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.5, duration: 2 }}
+                className="formulate"
+              >
+                Formulate
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 2.5, duration: 3 }}
+                className="brand"
+              >
+                Brand
+              </motion.p>
+            </motion.h1>
+          </motion.div>
           {/* div */}
           <div className="otherContent">
-            <div className="box ">
+            <motion.div
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{
+                delay: 4,
+                type: "spring",
+                mass: 0.4,
+                damping:8
+              }}
+              className="box "
+            >
               <p className="info">
                 Nigeria’s first ever private label natural cosmetics brand
                 created to help anyone with passion launch their very own safe
                 and effective skincare or haircare brand.
               </p>
-            </div>
-            <div className="list_group">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                delay: 5,
+              }}
+              className="list_group"
+            >
               {/* Single text */}
-              <h6 className="single-text">
+              <motion.h6 className="single-text">
                 <img src={ListImage} alt="logo" />
                 <p className="list-text">Low minimum order quantity</p>
-              </h6>
+              </motion.h6>
               {/* Single text */}
-              <h6 className="single-text">
+              <motion.h6 className="single-text">
                 <img src={ListImage} alt="logo" />
                 <p className="list-text">Safe and effective products</p>
-              </h6>
+              </motion.h6>
               {/* Single text */}
-              <h6 className="single-text">
+              <motion.h6 className="single-text">
                 <img src={ListImage} alt="logo" />
                 <p className="list-text">
                   Worked with over 30 brands to launch their brands
                 </p>
-              </h6>
+              </motion.h6>
               {/* Single text */}
-              <h6 className="single-text">
+              <motion.h6 className="single-text">
                 <img src={ListImage} alt="logo" />
                 <p className="list-text">
                   Free basic branding available for first time clients
                 </p>
-              </h6>
+              </motion.h6>
               {/* Single text */}
-              <h6 className="single-text">
+              <motion.h6 className="single-text">
                 <img src={ListImage} alt="logo" />
                 <p className="list-text">
                   Test our products before you commit to production
                 </p>
-              </h6>
-            </div>
+              </motion.h6>
+            </motion.div>
           </div>
         </Col>
         <Col lg={5} className="col2">

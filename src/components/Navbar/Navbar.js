@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import {motion} from 'framer-motion'
 
 import Logo from "../../assets/images/Logo.svg";
 
