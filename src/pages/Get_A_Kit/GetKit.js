@@ -1,6 +1,8 @@
-import React from "react";
-import { Col, Image } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Col, Image,Row } from "react-bootstrap";
 import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./GetKit.css";
 import Container from "../../components/Container/Container";
 import SubContainer from "../../components/Container/SubContainer";
@@ -14,9 +16,18 @@ import Image7 from "../../assets/images/kit_svg2.svg";
 import Image8 from "../../assets/images/kit_svg3.svg";
 import Image9 from "../../assets/images/kit_svg4.svg";
 import Image10 from "../../assets/images/kit_svg5.svg";
+import Image11 from "../../assets/images/kit_svg6.svg";
+import Image12 from "../../assets/images/kit_svg7.svg";
+import Image13 from "../../assets/images/kit_svg8.svg";
+import Image14 from "../../assets/images/kit_image2.png";
+import Image15 from "../../assets/images/kit_image3.png";
+import Image16 from "../../assets/images/kit_image4.png";
 import Button from "../../components/Button/Button";
 
 const GetKit = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, []);
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -36,7 +47,7 @@ const GetKit = () => {
           />
         </Col>
         <Col sm={12} lg={5} className="kit-col2">
-          <div className="kit_discover">
+          <div data-aos="zoom-in" className="kit_discover">
             <h6 className="kit_main_text">DISCOVER</h6>
             <h6 className="kit_main_text">YOUR </h6>
             <h6 className="kit_main_text">BRAND</h6>
@@ -71,7 +82,7 @@ const GetKit = () => {
         </Col>
         {/* READY TO TRY */}
         <Col className="pt-5" lg={7} className="kit_ready_col1">
-          <div className="kit_ready_cont">
+          <div data-aos="fade-right" className="kit_ready_cont">
             <h6 className="kit_ready_text">Ready to give it a try?</h6>
             <h6 className="kit_ready_subText">Then follow these steps</h6>
             <div className="kit_ready_steps_cont mt-4">
@@ -114,6 +125,9 @@ const GetKit = () => {
               </h6>
             </div>
           </div>
+          <div className="kit_btn_cont">
+            <Button title="Choose my Kits" wide_black="true" />
+          </div>
         </Col>
         <Col className="pt-5" lg={5} className="kit_ready_col2">
           <Image
@@ -124,6 +138,72 @@ const GetKit = () => {
           />
         </Col>
       </Container>
+      <SubContainer>
+        <Col xs={12} className="kit_manufacture pt-5">
+          <h6 className="kit_manufacture_text">
+            Manufacture. Formulate. Brand
+          </h6>
+          <h6 className="kit_manufacture_subText">
+            Nigeria’s first ever private label natural cosmetics brand created
+            to help anyone with passion launch their very own safe and effective
+            skincare or haircare brand.
+          </h6>
+          {/* MANUFACTURE SUBCONTAINER */}
+          <div className="kit_flex_cont mt-5 d-flex justify-around flex-wrap">
+            {/* Single flex */}
+            <div data-aos="flip-left" className="kit_single_flex mb-5">
+              <Image
+                src={Image11}
+                alt="Ileri-Labs"
+                fluid
+                className="single_kit_flex_image"
+              />
+              <h6 className="single_kit_text">Manufacturing of products</h6>
+              <h6 className="single_kit_subText">
+                Duis id eleifend habitasse est sit ornare id urna sit sit.
+              </h6>
+            </div>
+            {/* Single flex */}
+            <div data-aos="flip-left" className="kit_single_flex mb-5">
+              <Image
+                src={Image12}
+                alt="Ileri-Labs"
+                fluid
+                className="single_kit_flex_image"
+              />
+              <h6 className="single_kit_text">Formulation of products</h6>
+              <h6 className="single_kit_subText">
+                Duis id eleifend habitasse est sit ornare id urna sit sit.
+              </h6>
+            </div>
+            {/* Single flex */}
+            <div data-aos="flip-left" className="kit_single_flex mb-5">
+              <Image
+                src={Image13}
+                alt="Ileri-Labs"
+                fluid
+                className="single_kit_flex_image"
+              />
+              <h6 className="single_kit_text">Formulation of products</h6>
+              <h6 className="single_kit_subText">
+                Duis id eleifend habitasse est sit ornare id urna sit sit.
+              </h6>
+            </div>
+          </div>
+          {/* KIT_BTN */}
+          <div className="kit_flex_btn_cont mx-auto">
+            <Button title="Try it out" wide_black="true" />
+          </div>
+        </Col>
+        <Col xs={12} className="kit_flex_image_col">
+          <h6 className="kit_flex_text">Simple. Unique. Classic</h6>
+          <Row className="mt-5 mx-auto">
+            <Col md={4} sm={6} className="single_kit_flex_img mb-5"><Image src={Image14} alt="Ileri" fluid/></Col>
+            <Col md={4} sm={6} className="single_kit_flex_img mb-5"><Image src={Image15} alt="Ileri" fluid/></Col>
+            <Col md={4} sm={6} className="single_kit_flex_img mb-5"><Image src={Image16} alt="Ileri" fluid/></Col>
+          </Row>
+        </Col>
+      </SubContainer>
     </motion.div>
   );
 };

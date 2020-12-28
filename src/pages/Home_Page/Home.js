@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import ReactPlayer from "react-player";
@@ -22,11 +22,19 @@ import CarouselItem from "../../components/Carousel/CarouselItem";
 // SLICK CAROUSEL
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// AOS
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const carouselList = data.map((data, index) => (
     <CarouselItem {...data} key={index} />
   ));
+
+ useEffect(() => {
+   Aos.init({ duration: 2500 });
+ }, []);
+
 
   return (
     <>
@@ -34,7 +42,7 @@ const Home = () => {
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: .5 }}
+        transition={{ duration: 0.5 }}
       >
         <Containers>
           <Col sm={12} lg={7} className="col1">
@@ -143,8 +151,8 @@ const Home = () => {
           </Col>
         </Containers>
         {/* Launch section */}
-        <div className="col3">
-          <h6 className="col3_text">
+        <div className="col3 overflow-x-hidden">
+          <h6 data-aos="fade-right" className="col3_text">
             Launch Your Brand of Skincare or Haircare Products
           </h6>
           <Button title="Get Started" />
@@ -162,8 +170,14 @@ const Home = () => {
               className="toggleimage"
             />
           </Col>
-          <Col xs={12} lg={7} className="pt-5 process_col2 pb-5">
-            <h6 className="process_text">The Private Label Process</h6>
+          <Col
+            xs={12}
+            lg={7}
+            className="pt-5 process_col2 pb-5 overflow-x-hidden"
+          >
+            <h6 data-aos="fade-left" className="process_text">
+              The Private Label Process
+            </h6>
             <StepsComponent />
             <Button coloured="true" title="Learn more" />
           </Col>
