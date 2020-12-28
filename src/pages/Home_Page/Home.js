@@ -152,7 +152,7 @@ const Home = () => {
         </Containers>
         {/* Launch section */}
         <div className="col3 overflow-x-hidden">
-          <h6 data-aos="fade-right" className="col3_text overflow-x-hidden">
+          <h6 data-aos="fade" className="col3_text overflow-x-hidden">
             Launch Your Brand of Skincare or Haircare Products
           </h6>
           <Button title="Get Started" />
@@ -175,7 +175,7 @@ const Home = () => {
             lg={7}
             className="pt-5 process_col2 pb-5 overflow-x-hidden"
           >
-            <h6 data-aos="fade-left" className="process_text overflow-x-hidden">
+            <h6 data-aos="zoom-in" className="process_text overflow-x-hidden">
               The Private Label Process
             </h6>
             <StepsComponent />
