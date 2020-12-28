@@ -1,6 +1,7 @@
 .col1 {
   padding-top: 20px;
   padding-left: 10px;
+  padding-bottom: 30px;
 }
 .manu {
   font-size: 74.75px;
@@ -25,8 +26,9 @@
   width: 80%;
   background-color: #687a61;
   height: 100px;
-  padding: 10px 30px;
+  padding: 10px 30px 30px 30px;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .info {
   color: #fcfcfc;
@@ -284,6 +286,7 @@
   }
   .col1 {
     width: 100% !important;
+    padding-bottom: 10px;
   }
   .manu,
   .formulate,
@@ -396,6 +399,13 @@
   .home_launch_btn{
   margin-top: 30px;
 }
+}
+@media screen and (max-width:450px){
+  .manu,
+  .formulate,
+  .brand {
+    font-size: 55px !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
