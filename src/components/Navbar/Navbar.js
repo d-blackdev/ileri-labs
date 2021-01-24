@@ -54,7 +54,7 @@ function Navbar() {
       }
     >
       <NavLink to="/" className="navbar-logo" onClick={hideDropdown}>
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="Ileri-labs"  />
       </NavLink>
       <div className="menu-icon" onClick={handleClick}>
         {click ? <FaTimes /> : <FaBars />}
