@@ -1,0 +1,122 @@
+.what_we_do_cont {
+  padding-top: 50px !important;
+  padding-left: 70px;
+  /* height: 100vh; */
+  /* padding-bottom: 20px; */
+}
+.what_we_do_image {
+  height: 95% !important;
+  width: 95%;
+}
+.what_we_do_col_1 {
+  padding-top: 50px !important;
+}
+.what_we_do_btn_cont {
+  margin-top: 50px;
+}
+/* .what_we_do_image_cont{
+
+} */
+.what_we_do_title {
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+color: #687a61;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.what_we_do_sub_title {
+  font-family: Poppins;
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 700;
+  /* margin-top: 5px; */
+  letter-spacing: 0em;
+  text-align: left;
+  /* text-transform: lowercase; */
+}
+.what_we_do_text {
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  margin-top: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 70%;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .what_we_do_cont {
+    padding-left: 70px !important;
+    padding-top: 40px !important;
+  }
+  .what_we_do_image {
+    height: 80% !important;
+    width: 94%;
+  }
+  .what_we_do_sub_title {
+    font-size: 50px;
+  }
+  .what_we_do_text {
+    font-size: 16px;
+  }
+  .what_we_do_col_1 {
+  padding-top: 0px !important;
+}
+}
+@media screen and (max-width: 960px) {
+  .what_we_do_cont {
+    padding-left: 5px !important;
+  }
+  .what_we_do_col_1 {
+    margin-bottom: 50px;
+  }
+  .what_we_do_text {
+    font-size: 18px;
+    width: 95%;
+  }
+  .what_we_do_sub_title {
+    font-size: 55px;
+  }
+  .what_we_do_image {
+ 
+  width: 98%;
+}
+}
+@media screen and (max-width: 560px) {
+  .what_we_do_text {
+    font-size: 16px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .what_we_do_sub_title {
+    font-size: 45px;
+  }
+   .what_we_do_text {
+    font-size: 15px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .what_we_do_sub_title {
+    font-size: 40px;
+  }
+   .what_we_do_text {
+    font-size: 15px;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .what_we_do_sub_title {
+    font-size: 33px;
+  }
+   .what_we_do_text {
+    font-size: 13px;
+    width: 95%;
+  }
+}

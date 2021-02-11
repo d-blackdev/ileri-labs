@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import ReactPlayer from "react-player";
@@ -31,10 +31,9 @@ const Home = () => {
     <CarouselItem {...data} key={index} />
   ));
 
- useEffect(() => {
-   Aos.init({ duration: 2500 });
- }, []);
-
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, []);
 
   return (
     <>
@@ -155,7 +154,9 @@ const Home = () => {
           <h6 data-aos="fade" className="col3_text overflow-x-hidden">
             Launch Your Brand of Skincare or Haircare Products
           </h6>
-          <Button title="Get Started" />
+          <div className="col3_btn mt-4">
+            <Button title="Get Started" />
+          </div>
         </div>
         {/* PROCESS SECTION */}
         <SubContainers className=" pt-5 subCont">
@@ -173,13 +174,16 @@ const Home = () => {
           <Col
             xs={12}
             lg={7}
-            className="pt-5 process_col2 pb-5 overflow-x-hidden"
+            className="pt-5 process_col2 pb-5 overflow-x-hidden "
           >
             <h6 data-aos="zoom-in" className="process_text overflow-x-hidden">
               The Private Label Process
             </h6>
             <StepsComponent />
+            <div className="process_step_btn">
+
             <Button coloured="true" title="Learn more" />
+            </div>
           </Col>
           {/* TEST SECTION */}
           <Col xs={12} className="home_test ">

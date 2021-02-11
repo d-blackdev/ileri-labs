@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 import Logo from "../../assets/images/Logo.svg";
 
@@ -19,8 +19,11 @@ function Navbar() {
     setClick(false);
   };
   const showDropdown = () => {
-    setDropdown(!dropdown);
+    setDropdown(true);
   };
+  const MouseExit = () => {
+    setDropdown(false);
+  }
   const hideDropdown = () => {
     closeMobileMenu();
     setDropdown(false);
@@ -54,7 +57,7 @@ function Navbar() {
       }
     >
       <NavLink to="/" className="navbar-logo" onClick={hideDropdown}>
-        <img src={Logo} alt="Ileri-labs"  />
+        <img src={Logo} alt="Ileri-labs" />
       </NavLink>
       <div className="menu-icon" onClick={handleClick}>
         {click ? <FaTimes /> : <FaBars />}
@@ -90,7 +93,12 @@ function Navbar() {
         <li className="nav-item nav_dropdown">
           <NavLink exact className="nav-links" to="/products">
             Products
-            <FaChevronDown className="dropdown-icon" onClick={showDropdown} />
+            <FaChevronDown
+              className="dropdown-icon"
+              onMouseOver={showDropdown}
+              // onMouseLeave={MouseExit}
+              // onMouseExit
+            />
           </NavLink>
           {dropdown && (
             <div
@@ -141,11 +149,11 @@ function Navbar() {
         {/* BUTTON */}
         <li className="nav-btn">
           {button ? (
-            <NavLink className="btn-link" to="#" onClick={hideDropdown}>
+            <NavLink className="btn-link" to="/login" onClick={hideDropdown}>
               <button className="btn-primary btn">SIGN IN</button>
             </NavLink>
           ) : (
-            <NavLink className="btn-link" to="#" onClick={hideDropdown}>
+            <NavLink className="btn-link" to="/login" onClick={hideDropdown}>
               <button className="btn-mobile btn">SIGN IN</button>
             </NavLink>
           )}

@@ -149,7 +149,7 @@ const GetKit = () => {
             skincare or haircare brand.
           </h6>
           {/* MANUFACTURE SUBCONTAINER */}
-          <div className="kit_flex_cont mt-5 d-flex justify-around flex-wrap">
+          <div className="kit_flex_cont  d-flex justify-around flex-wrap">
             {/* Single flex */}
             <div data-aos="flip-left" className="kit_single_flex mb-5">
               <Image
@@ -159,7 +159,7 @@ const GetKit = () => {
                 className="single_kit_flex_image"
               />
               <h6 className="single_kit_text">Manufacturing of products</h6>
-              <h6 className="single_kit_subText">
+              <h6 className="single_kit_subText text-center">
                 Duis id eleifend habitasse est sit ornare id urna sit sit.
               </h6>
             </div>

@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif !important;
   /* overflow-x: hidden !important; */
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 /* Track */
@@ -18,13 +18,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #a5593c;
+  background: #999;
   border-radius: 30px;
   min-height: 30px;
+  
 }
 
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #687a61;
-}
+} */

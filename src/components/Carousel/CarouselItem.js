@@ -20,11 +20,11 @@ const CarouselItem = ({ img, text, name, job }) => {
 export default CarouselItem;
 
 const Carousel = styled.div`
-  max-width: 350px;
-  height: 460px;
+  max-width: 366px;
+  height: 496px;
   background-color: #fff;
-  padding-left: 20px;
-  padding-top: 30px;
+  padding-left: 40px;
+  padding-top: 50px;
   border-radius: 10px;
   z-index: 100;
   padding-bottom: 20px;
@@ -37,8 +37,8 @@ const Carousel = styled.div`
   }
 
   .carousel_images {
-    width: 120px !important;
-    height: 120px !important;
+    width: 115px !important;
+    height: 115px !important;
     border-radius: 50% !important;
   }
   .carousel_text {
@@ -50,7 +50,7 @@ const Carousel = styled.div`
   }
   .carousel_divider {
     width: 100px;
-    height: 5px;
+    height: 2px;
     background-color: #687a61;
     border-radius: 20px;
     margin-top: 30px;

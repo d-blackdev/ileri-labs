@@ -4,4 +4,5 @@
 .my_carousel:hover {
   transform: translateY(-15px);
   box-shadow: 0 7px 11px 0 rgba(232, 152, 93, 0.2), 0 6px 20px 0 rgba(232, 152, 93, 0.2);
+  
 }

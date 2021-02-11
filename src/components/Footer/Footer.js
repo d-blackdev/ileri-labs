@@ -10,7 +10,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <SubContainer className="footer">
-      <Col sm={6} md={4} lg={3}>
+      <Col sm={6} md={4} lg={4}>
         <div className="footer_logo_cont">
           <Image src={Logo} alt="Ileri" className="footer_logo" />
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           </Link>
         </h6>
       </Col>
-      <Col sm={6} md={4} lg={3}>
+      <Col sm={6} md={4} lg={2}>
         <h6 className="footer_header">Customer Care</h6>
         {/* LINKS */}
         <h6 className="footer_nav">
